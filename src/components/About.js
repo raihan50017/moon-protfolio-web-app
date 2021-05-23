@@ -127,7 +127,7 @@ const About = () => {
             </Box>
             <Box>
             <Grid className={aboutButtons} container>
-                <Grid className={aboutSocial} xs={12} md={9}>
+                <Grid item className={aboutSocial} xs={12} md={9}>
                     <Typography variantMapping={{ul:'ul'}} variant="ul">
                         <Typography variantMapping={{li:'li'}} variant="li">
                             <a href="facebook.com">
@@ -151,7 +151,7 @@ const About = () => {
                         </Typography>
                     </Typography>
                 </Grid>
-                <Grid className={aboutDownload} xs={12} md={3}>
+                <Grid item className={aboutDownload} xs={12} md={3}>
                     <a href="/download">
                         <Typography variant="h2">
                             Download resume
