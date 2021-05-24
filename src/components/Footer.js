@@ -1,15 +1,95 @@
+import { Box, Grid, makeStyles, Typography } from '@material-ui/core';
 import React from 'react';
 
+const styles = makeStyles({
+    footerArea: {
+        padding: "69px 40px",
+        backgroundColor: "black",
+        "& p":{
+            fontSize: "16px",
+            color: "#fff",
+            lineHeight: "32px",
+            marginTop: "24px",
+            margin: "0 0 10px",
+            textAlign:"center"
+        }
+    },
+
+    footerIconWrap:{
+        justifyContent:"center",
+    },
+
+   footerIcon:{
+        display: "flex",
+        "& ul":{
+            listStyleType: "none",
+            marginBottom: "10px",
+            display:"block",
+            textAlign:"center",
+            "& li":{
+                display: "inline-block",
+                backgroundColor: "#82B440",
+                margin: "0px 4px",
+                borderRadius:"10px",
+                transition: "all 0.1s ease",
+                "&:hover": {
+                    display: "inline-block",
+                    backgroundColor: "#E74C3C",
+                    transition: "all 0.1s ease",
+                },
+                "& a":{
+                    color: "#337ab7",
+                    textDecoration: "none",
+                    "& img":{
+                        padding: "3px",
+                        maxWidth: "100%",
+                        height: "auto",
+                        verticalAlign: "middle",
+                        border: "0",
+                    }
+                }
+            }
+        }
+    },
+
+})
+
 const Footer = () => {
+
+    const {footerArea, footerIcon, footerIconWrap} = styles();
+
     return (
-        <div>
-            <h1>Footer component</h1>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, earum doloribus quidem sint iste rem unde explicabo corporis eos, consequatur ipsa quos? Exercitationem, dolorum deserunt. Perspiciatis expedita necessitatibus repellendus tempora repellat molestias fugiat, provident quisquam vel recusandae labore voluptatem totam minima aliquam architecto quas natus veniam. Temporibus vero expedita ullam iusto quod, harum perspiciatis, placeat odio corrupti repellat vel unde quas magnam eos quo esse quidem inventore accusamus cumque consequatur aperiam itaque. Id illo sunt sequi, est in suscipit dolorum corrupti mollitia ex? Sunt ipsa vel commodi? Facere nihil quis qui, aliquam placeat asperiores itaque natus facilis. Porro dolores odio maiores quidem alias, fugiat quas rem quibusdam a numquam expedita officia voluptates neque. Culpa dolor impedit, laboriosam fugit totam dicta doloribus ducimus laborum accusantium consequuntur voluptates doloremque consequatur explicabo tempora reiciendis fuga vitae iusto suscipit corrupti expedita modi? Ullam mollitia rem tenetur deleniti, corrupti culpa! Exercitationem veniam architecto dolorum magnam cumque repudiandae voluptatibus quae, alias officia quidem placeat necessitatibus eligendi fugiat adipisci, vitae neque praesentium deleniti nihil nisi totam aperiam laboriosam voluptates velit. Iure, sint. Reiciendis eaque iusto quasi ipsa delectus ipsam ratione libero reprehenderit, quia beatae? Dolorem repellendus asperiores veniam illum corporis blanditiis, atque delectus aliquid laudantium aperiam eius rerum ab veritatis recusandae amet labore ex. Cum aliquam dolore iste consequuntur dolor, atque est quaerat placeat nihil esse eligendi iure alias animi illum ipsam reiciendis, earum, debitis molestias voluptate voluptas architecto minima. Officia, ad quam, atque repudiandae blanditiis provident neque, obcaecati necessitatibus expedita maiores eveniet veritatis ipsam magnam alias nam. Eligendi aperiam odio quidem nam, mollitia numquam deleniti id quia dolorem quibusdam consectetur eveniet debitis veritatis. Est veritatis totam, cupiditate quia possimus obcaecati itaque reprehenderit quis autem nulla, impedit odit omnis laudantium a ea, provident aut doloribus libero architecto. Modi dolorum reprehenderit fuga tempora eum? Laborum itaque deserunt fuga, adipisci natus corrupti quae? Ducimus repellendus facilis, eius in totam tempore ad deserunt facere! Necessitatibus natus voluptate dicta ratione reiciendis quam, cumque ut quos voluptatum accusantium blanditiis corrupti eligendi iusto nostrum obcaecati tempore quis ad consequatur magnam nemo veniam adipisci? Ut sed nihil harum nulla quaerat tenetur sint perferendis cum id commodi quisquam laudantium nostrum, quibusdam enim hic architecto necessitatibus! Sapiente eveniet vitae dicta laborum perspiciatis expedita earum voluptate itaque obcaecati accusamus veritatis esse nostrum vero, quibusdam minus ab nisi harum voluptatem id mollitia. Culpa odio enim nulla et reprehenderit accusamus esse cum? Quidem eligendi fuga odit soluta ipsum rem necessitatibus, illo, amet labore ducimus qui culpa illum eos? Vero in unde totam velit. At quasi ad voluptas esse consequatur quis distinctio ratione eveniet suscipit iusto doloremque mollitia recusandae itaque placeat nemo et, iure voluptatem saepe! Expedita consequuntur, a quas similique possimus excepturi voluptatibus autem atque cum adipisci ipsum ab? Vitae maxime suscipit provident sapiente. Ab adipisci deleniti inventore a reprehenderit doloremque voluptatum accusantium harum quod. Quisquam repellat velit officiis! Eos omnis sed et necessitatibus temporibus atque neque consequatur quod corporis placeat veritatis iste eligendi voluptate beatae alias quasi, modi consectetur quis mollitia. Voluptatum, qui 
-                perferendis ab sint eos amet?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quidem repellat ut obcaecati. Ut ipsam at eligendi quasi harum maxime, dicta dolorem nisi consequatur quis libero deserunt sint quo. Esse eaque sequi deserunt asperiores voluptatibus eligendi atque, iste ut necessitatibus minima distinctio accusamus autem impedit voluptate, culpa nulla nihil aut excepturi veritatis. Magni possimus fuga assumenda cupiditate alias debitis obcaecati totam asperiores veniam quos explicabo molestiae, recusandae autem placeat nobis cum sint dolores, sapiente, repellat impedit nesciunt. Officia autem corrupti eos laboriosam odit! Ad nihil sint id cumque consectetur explicabo esse ducimus consequatur laudantium, ea earum placeat necessitatibus quod quasi culpa, quis praesentium incidunt reiciendis laboriosam. Dicta voluptates earum ea similique, illum nostrum quibusdam ducimus repellat assumenda tenetur, animi cupiditate nemo architecto numquam. Doloribus, quis nisi facere quos nobis iusto, qui labore in assumenda animi impedit! Error consequuntur sequi, blanditiis nulla quod ea deleniti explicabo recusandae dolores culpa impedit labore, tempore dolore voluptatum quam nobis doloribus praesentium minus. Ad, accusamus sed? Facere magnam at atque deleniti ratione in modi, sapiente provident maxime illum dolorum autem voluptate adipisci, assumenda laudantium excepturi earum perferendis officia impedit omnis veniam nulla. Dicta, quae natus harum ut, omnis dolorem soluta temporibus error provident, excepturi quod reprehenderit ipsam voluptatem accusamus magni repudiandae adipisci quis culpa fuga consequatur tempora deleniti. Cumque ullam aliquid fugit, quas itaque nihil totam aspernatur animi minima sequi esse labore necessitatibus consequatur, modi, exercitationem officiis consectetur dolor eius voluptate molestiae pariatur optio nisi iste tenetur. Fugit aspernatur, voluptas hic alias repellat quas ipsum odit non quibusdam nisi. Distinctio iste ullam hic repellendus molestias? Libero doloribus illo beatae delectus distinctio molestiae pariatur rerum labore, voluptatibus est cupiditate voluptatum iusto laboriosam eveniet tempore unde explicabo impedit dolorem dignissimos fuga iure temporibus sed. Accusantium, voluptatibus! Illum et beatae sequi omnis ad quidem recusandae, consectetur officiis pariatur ducimus eligendi dolore corrupti, quis voluptas illo iusto explicabo. Tempora, harum itaque dolores distinctio soluta debitis ut consectetur maxime tempore quasi eligendi fugit ipsam ab mollitia saepe laborum, sint deleniti dicta ipsum eum illo nam eaque totam. Animi alias sed voluptatem, at placeat quibusdam incidunt provident quia commodi maiores exercitationem? Molestiae ipsum repellendus maiores earum doloremque nostrum tempore incidunt quod, doloribus, quia corrupti dolor corporis explicabo illum praesentium cupiditate mollitia vel consequuntur unde cumque dolorum quos voluptatibus itaque! Harum eum dolore reprehenderit dolorem rerum iure totam vero, unde error facilis sapiente atque quod est qui ullam dignissimos accusamus blanditiis recusandae vitae. Exercitationem quo aperiam eligendi soluta, itaque nam delectus minima voluptatum at voluptates repudiandae, nesciunt enim. Quas ipsum delectus aliquam accusamus saepe ducimus dolor tempora nulla exercitationem, provident laudantium, totam sit culpa obcaecati impedit nemo, molestias harum sapiente inventore repellat facere dolorum molestiae dolores voluptatem. Sint fugiat minus ipsa, consequuntur sapiente dolor quia voluptas ipsum facilis laboriosam quas et. Ratione impedit ab animi. Illum necessitatibus, saepe eveniet labore corrupti atque optio, ipsum sequi aliquid, corporis nam aut similique quos? Atque placeat consequatur itaque aperiam ex, architecto, hic perspiciatis ab nostrum cum aut unde? Provident nam dolore voluptate quisquam laudantium tenetur quibusdam debitis aut. Iusto nostrum minima dolor facilis ullam cumque totam doloremque error unde quidem, beatae, a delectus. Doloribus quisquam nisi aliquam! Rerum sed necessitatibus qui voluptate sit, rem, dolor soluta commodi in cumque reprehenderit, voluptatem incidunt repellendus illo eius veritatis animi nam odit neque beatae. Recusandae ab praesentium autem eaque quae? Cum accusamus est odit praesentium nulla, itaque excepturi vero, totam harum eveniet sunt necessitatibus voluptate reprehenderit atque molestiae ad optio quod esse. Alias cupiditate laudantium dolorum at dicta vel esse recusandae, iste labore quibusdam ullam quae iure, ipsam dolorem eius cum nisi, sapiente eos veniam debitis. Quibusdam voluptatem consequatur natus tenetur maiores facilis doloribus explicabo vero sunt ex commodi labore, corrupti excepturi necessitatibus debitis ipsam! Ut dolores minima repellendus maiores repellat recusandae deserunt dicta laborum reiciendis sit commodi odio rerum, ratione provident esse amet quas debitis assumenda. Totam ab molestiae perferendis, vel voluptates eos tenetur accusamus saepe reiciendis necessitatibus corrupti alias exercitationem culpa sint praesentium ullam error nulla eius quibusdam? Optio molestias soluta, tempore mollitia nulla dolore pariatur, autem voluptas perferendis dolor quam sed velit accusantium laboriosam necessitatibus ex impedit. Natus commodi qui, a ut quidem asperiores? Deleniti temporibus vitae rem aliquid quia odio eligendi sequi unde mollitia corporis a non eveniet facere alias, reprehenderit perspiciatis, nulla ab aperiam earum! Odio nam quod corporis eligendi labore fuga? Maxime placeat reiciendis dolor natus rerum similique accusamus fuga sint enim. In recusandae minus libero similique excepturi cupiditate animi, quis dicta veniam, dolor, vel numquam ab voluptatem. Nulla quibusdam aliquam vel suscipit, nisi ab voluptatem odit veritatis quo perferendis, ipsam accusamus odio provident exercitationem eum inventore quos earum! Consequatur necessitatibus id nostrum mollitia ad doloremque, exercitationem itaque voluptate expedita at. Voluptatibus magnam cupiditate velit, in praesentium laborum accusantium dicta fuga repellat, delectus officia sed et iusto, tempora odit rem? Labore soluta necessitatibus praesentium deleniti at odit quasi eius ipsum, provident expedita voluptatum corrupti deserunt a quas laborum optio ea facere nostrum veritatis iure. Cumque odit iste quod non rerum eligendi voluptas labore officia similique fugit, temporibus excepturi minima praesentium fuga aspernatur molestias impedit dolore eum officiis pariatur? Nemo sed iste cumque vitae est. Officiis libero eos doloribus assumenda! Rerum aliquid cum, et doloribus provident itaque maxime, minus, iure ut quae nam aperiam fuga nisi labore numquam? Beatae ratione, est fuga, consequuntur doloribus sed maiores voluptas natus, amet assumenda distinctio ex minus nemo in similique repellat ipsa ad voluptatum obcaecati autem? Aperiam mollitia rem sint quia, cupiditate quas quisquam ea quae repellendus nemo odit pariatur repudiandae accusamus illum numquam a dignissimos in perferendis. Voluptas doloribus, veniam iste perferendis necessitatibus unde mollitia adipisci hic, repudiandae explicabo optio deleniti cum sunt suscipit praesentium minus molestiae voluptate sint corporis provident, reiciendis laborum quo cumque! Dolor, explicabo animi! Consequuntur, nemo eligendi ducimus libero porro neque placeat provident molestias facilis ex magni cum esse? Est facilis reiciendis minima maxime adipisci a ad ex? Magni, dolore nulla laborum soluta cum voluptate alias at quia nesciunt exercitationem dolorem voluptates nostrum in placeat ea ad voluptatibus nam quod nihil qui?
-            </p>
-        </div>
+       <Box className={footerArea}>
+           <Grid container className={footerIconWrap}>
+                <Grid item className={footerIcon}>
+                <Typography variantMapping={{ul:'ul'}} variant="ul">
+                        <Typography variantMapping={{li:'li'}} variant="li">
+                            <a href="facebook.com">
+                                <img alt="" src="/images/facebook.png"></img>
+                            </a>
+                        </Typography>
+                        <Typography variantMapping={{li:'li'}} variant="li">
+                            <a href="google.com">
+                                <img alt="" src="/images/googleplus.png"></img>
+                            </a>
+                        </Typography>
+                        <Typography variantMapping={{li:'li'}} variant="li">
+                            <a href="linkedin.com">
+                                <img alt="" src="/images/linkedin.png"></img>
+                            </a>
+                        </Typography>
+                        <Typography variantMapping={{li:'li'}} variant="li">
+                            <a href="tumblr.com">
+                                <img alt="" src="/images/tumblr.png"></img>
+                            </a>
+                        </Typography>
+                    </Typography>
+                </Grid>
+           </Grid>
+           <Typography variantMapping={{p:'p'}} variant="p">
+           © MOON-2017 | All Right Reserved
+           </Typography>
+       </Box>
     );
 };
 
